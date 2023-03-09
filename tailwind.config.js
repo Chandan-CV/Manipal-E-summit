@@ -12,7 +12,8 @@ module.exports = {
       fontFamily:{
         'Amita': ['Amita', 'cursive'],
         'Monoton': ['Monoton','cursive'],
-        'Playfair': ['Playfair Display', 'serif']
+        'Playfair': ['Playfair Display', 'serif'],
+        'Oswald':['Oswald', 'sans-serif']
       }
     },
   },
