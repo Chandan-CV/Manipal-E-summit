@@ -1,4 +1,3 @@
-import { ImageProps } from 'next/image'
 import React from 'react'
 
 interface Props{
