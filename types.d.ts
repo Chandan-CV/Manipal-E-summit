@@ -8,6 +8,14 @@ export interface Speaker{
     name: string
     company: string
 }
-export interface event{
  
+export interface presentation{
+    name: string,
+    time: string,
+    tag: string,
+    loc: string,
+    desc: string,
+    lmtSeat?: boolean,
+    src:string
+    comp?:string
 }

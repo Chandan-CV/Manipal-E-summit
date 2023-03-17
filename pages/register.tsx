@@ -1,9 +1,8 @@
 import Header from '@/components/Header'
-import Presentations from '@/components/presentations'
+import Presentations from '@/components/Presentations'
 import React from 'react'
-
 const desc = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
-
+import { presentation } from '@/types'
 export default function register() {
   return (
     <div>
