@@ -4,7 +4,8 @@ import styles from '@/styles/Home.module.css'
 import Globe from '../assets/Globe.png'
 import EventTile from '@/components/EventTile'
 import Header from '@/components/Header'
-import Presentations from '@/components/presentations'
+import Presentations from '@/components/Presentations'
+import { Nigga } from '@/types'
 const desc = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
 const name = 'Aman Gupta'
 const src='https://assets.gqindia.com/photos/61fa82d0f88d392f7d46a55c/4:3/w_1440,h_1080,c_limit/Aman-Gupta-net-worth.jpg'
@@ -12,7 +13,9 @@ const comp='boAt'
 const tag='Galat Aadmi hun' 
 const time='12:00 AM' 
 const loc='Sri Lanka'
+
 export default function Home() {
+  const loll: Nigga[] = [{age:10, name:"nigga"}]
   return (
     <div className=''>
       <Head>
@@ -64,7 +67,7 @@ export default function Home() {
           
             <div className='flex flex-row w-[90vw] h-[50vh] m-14 bg-[#2B2B2B]'>
               <div className='w-1/3 bg-white h-full'>
-                <img className='object-conatin h-full w-full' src={src}/>
+                <img className='object-conatin h-full w-full' src={src} alt='enterpreneurship summit manipal academy of higher education Bangalore'/>
               </div>
               <div>
                 <p>{name}</p>
