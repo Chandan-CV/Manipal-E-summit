@@ -5,15 +5,12 @@ import Globe from '@/assets/globe.png'
 import EventTile from '@/components/EventTile'
 import Header from '@/components/Header'
 import Presentations from '@/components/Presentations'
-const desc = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum "
-const name = 'Aman Gupta'
-const src='https://assets.gqindia.com/photos/61fa82d0f88d392f7d46a55c/4:3/w_1440,h_1080,c_limit/Aman-Gupta-net-worth.jpg'
-const comp='boAt'
-const tag='Galat Aadmi hun' 
-const time='12:00 AM' 
-const loc='Sri Lanka'
+import { signIn, signOut, useSession } from 'next-auth/react'
+import { Button } from '@mui/material'
 
 export default function Home() {
+  const {data:session} = useSession();
+
   return (
     <div className=''>
       <Head>
@@ -22,11 +19,11 @@ export default function Home() {
         </title>
       </Head>
       <div className='bg-[#1E1E1E] h-full flex-col flex'>
-        <Header/>
         <div className='absolute pl-[60vw] pt-[10vh] overflow-hidden bg-opacity-50 h-[150vh] w-[100vw] right-0'>
           <div className='absolute bg-[#d6c423] bg-opacity-20 blur-[600pt] h-[120vh] w-[100vw]'/>
             <Image className='absolute left-[70vw] top-[5vh] h-[120vh] w-fit' src={Globe} alt={''}/>
         </div>
+        <Header/>
         <div className='flex h-[62vh] p-14 pb-4 flex-col'>
           <p className='text-[#FFFFFF] font-Playfair w-[50vw] text-[60pt]'>Unleashing the</p>
           <p className='text-[#FFFFFF] font-Playfair w-[50vw] text-[60pt]'>Power of</p>
